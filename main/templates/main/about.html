@@ -1,0 +1,269 @@
+﻿{% load static %}
+{% static 'img' as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="2nay">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'main/main,_bootstrap4.css' %}">
+<link rel="stylesheet"  href="{% static 'main/css/aboutUs_styles.css' %}">
+</head>
+<body>
+<div class="super_container">
+
+{% include 'main/header.html' %}
+<div class="menu trans_500">
+<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+<div class="menu_close_container"><div class="menu_close"></div></div>
+<div class="logo menu_logo"><a href="#"><img src="{% static 'main/images/2-300.png' %}" alt="">nay</a></div>
+<ul>
+<li class="main_nav_item"><a href="{% url 'home' %}">home</a></li>
+<li class="main_nav_item"><a href="{% url 'about' %}">about us</a></li>
+<li class="main_nav_item"><a href="{% url 'offers' %}">rooms</a></li>
+<li class="main_nav_item"><a href="{% url 'blog' %}">news</a></li>
+<li class="main_nav_item"><a href="{% url 'contact' %}">contact</a></li>
+</ul>
+</div>
+</div>
+
+<div class="home">
+<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{% static 'main/images/about_background.jpg'%}"></div>
+<div class="home_content">
+<div class="home_title">about us</div>
+</div>
+</div>
+
+<div class="intro">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<div class="intro_image"><img src="{% static 'main/images/intro.png'%}" alt=""></div>
+</div>
+<div class="col-lg-5">
+<div class="intro_content">
+<div class="intro_title">we have the best tours</div>
+<p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+<div class="button intro_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="container">
+<div class="row">
+<div class="col text-center">
+<div class="section_title">years statistics</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-10 offset-lg-1 text-center">
+<p class="stats_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. </p>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="stats_years">
+<div class="stats_years_last">2020</div>
+<div class="stats_years_new float-right">2021</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="stats_contents">
+
+<div class="stats_item d-flex flex-md-row flex-column clearfix">
+<div class="stats_last order-md-1 order-3">
+<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_1.png' %}" alt="">
+</div>
+<div class="stats_last_content">
+<div class="stats_number">1642</div>
+<div class="stats_type">Clients</div>
+</div>
+</div>
+<div class="stats_bar order-md-2 order-2" data-x="1642" data-y="3527" data-color="#31124b">
+<div class="stats_bar_perc">
+<div>
+<div class="stats_bar_value"></div>
+</div>
+</div>
+</div>
+<div class="stats_new order-md-3 order-1 text-right">
+<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_1.png'%}" alt="">
+</div>
+<div class="stats_new_content">
+<div class="stats_number">3527</div>
+<div class="stats_type">Clients</div>
+</div>
+</div>
+</div>
+
+<div class="stats_item d-flex flex-md-row flex-column clearfix">
+<div class="stats_last order-md-1 order-3">
+<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_2.png'%}" alt="">
+</div>
+<div class="stats_last_content">
+<div class="stats_number">768</div>
+<div class="stats_type">Returning Clients</div>
+</div>
+</div>
+<div class="stats_bar order-md-2 order-2" data-x="768" data-y="145" data-color="#a95ce4">
+<div class="stats_bar_perc">
+<div>
+<div class="stats_bar_value"></div>
+</div>
+</div>
+</div>
+<div class="stats_new order-md-3 order-1 text-right">
+<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_2.png'%}" alt="">
+</div>
+<div class="stats_new_content">
+<div class="stats_number">145</div>
+<div class="stats_type">Returning Clients</div>
+</div>
+</div>
+</div>
+
+<div class="stats_item d-flex flex-md-row flex-column clearfix">
+<div class="stats_last order-md-1 order-3">
+<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_3.png'%}" alt="">
+</div>
+<div class="stats_last_content">
+<div class="stats_number">11546</div>
+<div class="stats_type">Reach</div>
+</div>
+</div>
+<div class="stats_bar order-md-2 order-2" data-x="11546" data-y="9321" data-color="#fa6f1b">
+<div class="stats_bar_perc">
+<div>
+<div class="stats_bar_value"></div>
+</div>
+</div>
+</div>
+<div class="stats_new order-md-3 order-1 text-right">
+<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_3.png'%}" alt="">
+</div>
+<div class="stats_new_content">
+<div class="stats_number">9321</div>
+<div class="stats_type">Reach</div>
+</div>
+</div>
+</div>
+
+<div class="stats_item d-flex flex-md-row flex-column clearfix">
+<div class="stats_last order-md-1 order-3">
+<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_4.png'%}" alt="">
+</div>
+<div class="stats_last_content">
+<div class="stats_number">3729</div>
+<div class="stats_type">Items</div>
+</div>
+</div>
+<div class="stats_bar order-md-2 order-2" data-x="3729" data-y="17429" data-color="#fa9e1b">
+<div class="stats_bar_perc">
+<div>
+<div class="stats_bar_value"></div>
+</div>
+</div>
+</div>
+<div class="stats_new order-md-3 order-1 text-right">
+<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
+<img src="{% static 'main/images/stats_4.png'%}" alt="">
+</div>
+<div class="stats_new_content">
+<div class="stats_number">17429</div>
+<div class="stats_type">More Items</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="add">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="add_container">
+<div class="add_background" style="background-image:url({% static 'main/images/add.jpg'%})"></div>
+<div class="add_content">
+<h1 class="add_title">thailand</h1>
+<div class="add_subtitle">From <span>$999</span></div>
+<div class="button add_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="milestones">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-3 milestone_col">
+<div class="milestone text-center">
+<div class="milestone_icon"><img src="{% static 'main/images/milestone_1.png'%}" alt=""></div>
+<div class="milestone_counter" data-end-value="255">0</div>
+<div class="milestone_text">Clients</div>
+</div>
+</div>
+
+<div class="col-lg-3 milestone_col">
+<div class="milestone text-center">
+<div class="milestone_icon"><img src="{% static 'main/images/milestone_2.png'%}" alt=""></div>
+<div class="milestone_counter" data-end-value="1176">0</div>
+<div class="milestone_text">Projects</div>
+</div>
+</div>
+
+<div class="col-lg-3 milestone_col">
+<div class="milestone text-center">
+<div class="milestone_icon"><img src="{% static 'main/images/milestone_3.png'%}" alt=""></div>
+<div class="milestone_counter" data-end-value="39">0</div>
+<div class="milestone_text">Countries</div>
+</div>
+</div>
+
+<div class="col-lg-3 milestone_col">
+<div class="milestone text-center">
+<div class="milestone_icon"><img src="{% static 'main/images/milestone_4.png'%}" alt=""></div>
+<div class="milestone_counter" data-end-value="127">0</div>
+<div class="milestone_text">Coffees</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% include 'main/footer.html' %}
+<script src="{% static 'main/js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'main/css/bootstrap4/popper.js'%}"></script>
+<script src="{% static 'main/css/bootstrap4/bootstrap.min.js'%}"></script>
+<script src="{% static 'main/plugins/greensock/TweenMax.min.js'%}"></script>
+<script src="{% static 'main/plugins/greensock,_TimelineMax.min.js scrollmagic,_ScrollMagic.min.js greensock,_animation.gsap.min.js greensock,_ScrollToPlugin.min.js.pagespeed.jc.99LUpdnr2u.js'%}"></script><script>eval(mod_pagespeed_I9VWZRF5_u);</script>
+<script>eval(mod_pagespeed_cZJbNwBwXc);</script>
+<script>eval(mod_pagespeed_CqGC$Q9Dy5);</script>
+<script>eval(mod_pagespeed_OvK2Zn50dD);</script>
+<script src="{% static 'main/plugins/OwlCarousel2-2.2.1/owl.carousel.js'%}"></script>
+<script src="{% static 'main/plugins_about.js'%}"></script><script>eval(mod_pagespeed_5CNW3F6ie5);</script>
+<script>eval(mod_pagespeed_YhrgB1nOgv);</script>
+<script>eval(mod_pagespeed_2O0dmm0Xcg);</script>
+<script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"698691c62d207a64","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.9.0","si":100}'></script>
+</div>
+</body>
+</html>

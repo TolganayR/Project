@@ -1,0 +1,40 @@
+{% load static %}
+<header class="header">
+    <div class="top_bar">
+        <div class="container">
+            <div class="row">
+                <div class="user_box ml-auto">
+                   <div class="user_box_login user_box_link"><a href="{% url 'login' %}">login</a></div>
+                    <div class="user_box_login user_box_link">Hello, {{request.user}}</div>
+                    <div class="user_box_login user_box_link"><a href="{% url 'logout' %}">Logout</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="main_nav">
+<div class="container">
+<div class="row">
+<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+<div class="logo_container">
+<div class="logo"><a href="#"><img src="{% static 'main/images/2-300.png' %}" alt="">nay</a></div>
+</div>
+<div class="main_nav_container ml-auto">
+<ul class="main_nav_list">
+<li class="main_nav_item"><a href="{% url 'home' %}">home</a></li>
+<li class="main_nav_item"><a href="{% url 'about' %}">about us</a></li>
+<li class="main_nav_item"><a href="{% url 'offers' %}">rooms</a></li>
+<li class="main_nav_item"><a href="{% url 'blog' %}">news</a></li>
+<li class="main_nav_item"><a href="{% url 'contact' %}">contact</a></li>
+</ul>
+</div>
+<div class="hamburger">
+<i class="fa fa-bars trans_200"></i>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
